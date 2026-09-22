@@ -1,6 +1,6 @@
 import { Redirect, Stack } from 'expo-router';
 
-import { useOnboarding } from '../../src/onboarding-state';
+import { useOnboarding } from '../../onboarding-state';
 
 export default function MainLayout() {
   const { ready, complete } = useOnboarding();

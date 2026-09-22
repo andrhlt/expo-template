@@ -1,7 +1,6 @@
 # Expo Template
 
-A small iOS app starter for the Consumer App Kit. It includes three editable onboarding screens, a progress bar, a Superwall paywall placement, a main app area, purchase restoration, PostHog analytics, and a local Xcode release path. It contains no AppStu packages or CLI.
-
+A small iOS app starter. It includes three editable onboarding screens, a progress bar, a Superwall paywall placement, a main app area, purchase restoration, PostHog analytics, and a local Xcode release path.
 ## Start
 
 You need a Mac with Xcode, Bun, and an Apple Developer account.
@@ -17,7 +16,7 @@ Run `bun run start` after the first native build. This project uses native modul
 ## Make it yours
 
 1. Change `name`, `slug`, `scheme`, and `ios.bundleIdentifier` in `app.config.js`. The example bundle ID cannot be used for your App Store app.
-2. Replace the example content in `app/onboarding/index.tsx`, `app/main/index.tsx`, and `app/main/settings.tsx`.
+2. Replace the example content in `src/app/onboarding/index.tsx`, `src/app/main/index.tsx`, and `src/app/main/settings.tsx`.
 3. Create a Superwall iOS app and a campaign for the `onboarding_complete` placement. Put its public iOS API key in `.env` as `EXPO_PUBLIC_SUPERWALL_IOS_API_KEY`.
 4. Create a PostHog project and put its project API key and region host in `.env`. Analytics is disabled until a key is present.
 5. Rebuild the native app after changing native configuration or dependencies: `bun run ios`.

@@ -4,9 +4,9 @@ import { useRef, useState } from 'react';
 import { Alert, StyleSheet, Text, View } from 'react-native';
 import { usePostHog } from 'posthog-react-native';
 
-import { config } from '../../src/config';
-import { useOnboarding } from '../../src/onboarding-state';
-import { colors, PrimaryButton, Screen, styles } from '../../src/ui';
+import { config } from '../../config';
+import { useOnboarding } from '../../onboarding-state';
+import { colors, PrimaryButton, Screen, styles } from '../../ui';
 
 const steps = [
   { title: 'A starting point for your idea.', body: 'Replace these screens with the story your app needs to tell. Keep each step focused on one idea.' },

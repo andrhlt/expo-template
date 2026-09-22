@@ -2,9 +2,9 @@ import { router } from 'expo-router';
 import { useSuperwall } from 'expo-superwall';
 import { Alert, Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { config } from '../../src/config';
-import { useOnboarding } from '../../src/onboarding-state';
-import { colors, PrimaryButton, Screen, styles } from '../../src/ui';
+import { config } from '../../config';
+import { useOnboarding } from '../../onboarding-state';
+import { colors, PrimaryButton, Screen, styles } from '../../ui';
 
 function RestoreButton() {
   const restorePurchases = useSuperwall((state) => state.restorePurchases);

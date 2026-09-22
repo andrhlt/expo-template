@@ -1,8 +1,8 @@
 import { Redirect } from 'expo-router';
 import { ActivityIndicator, View } from 'react-native';
 
-import { useOnboarding } from '../src/onboarding-state';
-import { colors } from '../src/ui';
+import { useOnboarding } from '../onboarding-state';
+import { colors } from '../ui';
 
 export default function Index() {
   const { ready, complete } = useOnboarding();

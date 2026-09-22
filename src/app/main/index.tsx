@@ -3,8 +3,8 @@ import { useUser } from 'expo-superwall';
 import { StyleSheet, Text, View } from 'react-native';
 import { usePostHog } from 'posthog-react-native';
 
-import { config } from '../../src/config';
-import { colors, PrimaryButton, Screen, styles } from '../../src/ui';
+import { config } from '../../config';
+import { colors, PrimaryButton, Screen, styles } from '../../ui';
 
 function SubscriptionStatus() {
   const { subscriptionStatus } = useUser();

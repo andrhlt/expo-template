@@ -3,8 +3,8 @@ import { SuperwallProvider } from 'expo-superwall';
 import { PostHogProvider } from 'posthog-react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-import { config } from '../src/config';
-import { OnboardingProvider } from '../src/onboarding-state';
+import { config } from '../config';
+import { OnboardingProvider } from '../onboarding-state';
 
 export default function RootLayout() {
   const navigation = (
