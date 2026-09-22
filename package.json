@@ -1,0 +1,34 @@
+{
+  "name": "expo-template",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "expo-router/entry",
+  "packageManager": "bun@1.4.2",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "ios": "expo run:ios --device",
+    "prebuild": "expo prebuild --platform ios",
+    "typecheck": "tsc --noEmit",
+    "ios:archive": "bun scripts/release.mjs archive",
+    "ios:export": "bun scripts/release.mjs export",
+    "ios:upload": "bun scripts/release.mjs upload",
+    "ios:release": "bun scripts/release.mjs release"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~57.0.17",
+    "expo-dev-client": "~57.0.5",
+    "expo-router": "~57.0.17",
+    "expo-superwall": "^1.3.0",
+    "posthog-react-native": "^4.65.0",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.18",
+    "typescript": "~6.0.3"
+  }
+}
