@@ -41,6 +41,8 @@ function findWorkspace() {
 
 function archive() {
   requireCommand('xcodebuild');
+  const teamId = process.env.APPLE_TEAM_ID?.trim();
+  if (!teamId) throw new Error('Set APPLE_TEAM_ID in .env before archiving for App Store Connect.');
   run('bunx', ['expo', 'prebuild', '--platform', 'ios']);
   const { iosDir, workspace, scheme } = findWorkspace();
   const stamp = new Date().toISOString().replace(/[:.]/g, '-');
@@ -53,7 +55,9 @@ function archive() {
     '-configuration', 'Release',
     '-destination', 'generic/platform=iOS',
     '-archivePath', archivePath,
-    'archive'
+    'archive',
+    `DEVELOPMENT_TEAM=${teamId}`,
+    'CODE_SIGN_STYLE=Automatic'
   ], iosDir);
   saveBuild({ archivePath, scheme });
   console.log(`Archive ready: ${archivePath}`);

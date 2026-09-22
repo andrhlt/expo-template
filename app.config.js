@@ -12,6 +12,7 @@ export default {
     ios: {
       bundleIdentifier: 'com.example.expotemplate',
       buildNumber: '1',
+      appleTeamId: process.env.APPLE_TEAM_ID || undefined,
       config: { usesNonExemptEncryption: false }
     },
     plugins: ['expo-router'],

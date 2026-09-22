@@ -29,7 +29,7 @@ The onboarding completion flag only controls which route opens on launch. It is 
 This path runs locally on your Mac. It does not use EAS.
 
 1. Create your app record in App Store Connect, with the same bundle ID as `app.config.js`.
-2. Set up automatic signing for your Apple team in Xcode. After `bun run prebuild`, open the generated workspace under `ios/` if signing needs attention.
+2. Set `APPLE_TEAM_ID` in `.env` to your 10-character Apple Developer team ID. Sign in to that team in Xcode so automatic signing can create or locate the required credentials.
 3. Install the [App Store Connect CLI](https://github.com/rorkai/App-Store-Connect-CLI): `brew install asc`.
 4. Create an App Store Connect API key and follow the CLI's `asc auth login` instructions. Keep the `.p8` key outside this repository. Run `asc auth status --validate` to check it.
 5. Set `ASC_APP_ID` in `.env` to your numeric App Store Connect app ID.
