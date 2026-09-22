@@ -1,17 +1,20 @@
 # Expo Template
 
 A small iOS app starter. It includes three editable onboarding screens, a progress bar, a Superwall paywall placement, a main app area, purchase restoration, PostHog analytics, and a local Xcode release path.
+
 ## Start
 
-You need a Mac with Xcode, Bun, and an Apple Developer account.
+You need a Mac with Xcode, an iOS Simulator installed through Xcode, and Bun. An Apple Developer account is needed later to publish, not to try the template in the simulator.
 
 ```bash
+git clone https://github.com/andrhlt/expo-template.git
+cd expo-template
 bun install
 cp .env.example .env
 bun run ios
 ```
 
-Run `bun run start` after the first native build. This project uses native modules, so use its development build on an iPhone or simulator rather than Expo Go. The example onboarding works without service keys. At the final step, it explains what Superwall needs and lets you enter the main app.
+`bun run ios` builds and opens the app in the iOS Simulator. You should see three onboarding screens with a progress bar, then a demo paywall step, then the main app. The example works with the blank service keys in `.env`; add your own keys later. This project uses native modules, so use its development build rather than Expo Go. After the first native build, use `bun run start` for everyday JavaScript changes. To build on a connected iPhone instead, use `bun run ios:device`.
 
 ## Make it yours
 
