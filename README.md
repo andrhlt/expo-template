@@ -20,7 +20,7 @@ bun run ios
 
 1. Change `name`, `slug`, `scheme`, and `ios.bundleIdentifier` in `app.config.js`. The example bundle ID cannot be used for your App Store app.
 2. Replace the example content in `src/app/onboarding/index.tsx`, `src/app/main/index.tsx`, and `src/app/main/settings.tsx`.
-3. Create a Superwall iOS app and a campaign for the `onboarding_complete` placement. Put its public iOS API key in `.env` as `EXPO_PUBLIC_SUPERWALL_IOS_API_KEY`.
+3. Create a Superwall iOS app and put its public iOS API key in `.env` as `EXPO_PUBLIC_SUPERWALL_IOS_API_KEY`. The template uses Superwall's default `campaign_trigger` placement to show its example paywall, so you do not need to create a placement just to try it. Add your own products and configure a real paywall before launch.
 4. Create a PostHog project and put its project API key and region host in `.env`. Analytics is disabled until a key is present.
 5. Rebuild the native app after changing native configuration or dependencies: `bun run ios`.
 

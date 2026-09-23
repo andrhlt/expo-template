@@ -84,7 +84,7 @@ export default function Onboarding() {
   if (config.superwallKey) return <ConfiguredOnboarding />;
 
   return <OnboardingScreens presentPaywall={(finish) => {
-    Alert.alert('Superwall is not configured', 'Add your iOS API key to .env and create the onboarding_complete placement in Superwall.', [
+    Alert.alert('Superwall is not configured', 'Add your iOS API key to .env to use the default campaign_trigger paywall in Superwall.', [
       { text: 'Continue to app', onPress: finish }
     ]);
   }} />;
