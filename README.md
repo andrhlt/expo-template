@@ -6,9 +6,11 @@ A small iOS app starter. It includes three editable onboarding screens, a progre
 
 You need a Mac with Xcode, an iOS Simulator installed through Xcode, and Bun. An Apple Developer account is needed later to publish, not to try the template in the simulator.
 
+First, open [the template on GitHub](https://github.com/andrhlt/expo-template) and choose **Use this template → Create a new repository**. Choose a name and whether your new repository should be public or private. Work in your new repository, not in the template repository or a fork of it.
+
 ```bash
-git clone https://github.com/andrhlt/expo-template.git
-cd expo-template
+git clone https://github.com/YOUR_USERNAME/YOUR_APP_REPO.git
+cd YOUR_APP_REPO
 bun install
 cp .env.example .env
 bun run ios
